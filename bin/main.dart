@@ -8,7 +8,7 @@ main(List<String> arguments) {
 
   List<String> files = new List<String>();
   Directory.current.listSync().forEach((FileSystemEntity fse) {
-    if(fse.statSync().type == FileSystemEntityType.FILE) files.add(fse.path);
+    if(fse.statSync().type == FileSystemEntityType.file) files.add(fse.path);
   });
 
   String zipfile = '/home/rootshell/Videos/test/test.zip';
